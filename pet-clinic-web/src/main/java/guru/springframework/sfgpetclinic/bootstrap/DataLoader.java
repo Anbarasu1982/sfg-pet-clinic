@@ -26,14 +26,12 @@ public class DataLoader implements CommandLineRunner {
             System.out.println("Bootstrapping Data....!!!!");
 
             Owner owner1 = new Owner();
-            owner1.setId(1L);
             owner1.setFirstName("Anbarasu");
             owner1.setLastName("Shanmugham");
 
             ownerService.save(owner1);
 
             Owner owner2 = new Owner();
-            owner2.setId(2L);
             owner2.setFirstName("Kiruthiga");
             owner2.setLastName("Anbarasu");
 
@@ -41,14 +39,12 @@ public class DataLoader implements CommandLineRunner {
             System.out.println("Created Owners!!!");
 
             Vet vet1 = new Vet();
-            vet1.setId(1L);
             vet1.setFirstName("Shanmugham");
             vet1.setLastName("Mohan");
 
             vetService.save(vet1);
 
             Vet vet2 = new Vet();
-            vet2.setId(2L);
             vet2.setFirstName("Murugan");
             vet2.setLastName("Kumarasamy");
 
