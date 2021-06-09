@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 <head>
     <meta charset="UTF-8">
     <title>Owner Index Page</title>
@@ -8,7 +8,7 @@
     <!--/*@thymesVar id="owner" type="guru.springframework.sfgpetclinic.model.Owner" */-->
     <h1 th:text="'List Of Owners'">List the ownersss...</h1>
 
-    <table>
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Id</th>
